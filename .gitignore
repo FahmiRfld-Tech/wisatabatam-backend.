@@ -1,7 +1,24 @@
+# Credentials
+.env
+.env.*
+!.env.example
+# Python / local tooling
+.venv/
 venv/
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+# Local databases, embeddings and static build output
 db.sqlite3
-chroma_db_local/
-chroma_db_gemini/
-.env
+db.sqlite3-*
+.data/
+chroma_db*/
+staticfiles/
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
